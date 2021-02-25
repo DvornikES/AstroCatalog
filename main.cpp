@@ -91,15 +91,45 @@ class Dwarf: public Star{
 class YellowDwarf: public Dwarf{
 public:
     YellowDwarf(){
-        this->name="Alpha Centauri";
-        this->age="5 billion years";
-        this->distant="4.37 light years";
+        this->name="Alpha Centaur";
+        this->age="285 thouthands years";
+        this->distant="~6523 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about YellowDwarf";
+        cout<<"Interesting Facts about Neutron";
     }
     void ShowDescription() override{
-        cout<<"Yea description of YellowDwarf";
+        cout<<"Yea description of Neutron";
+    }
+};
+
+class RedDwarf: public Dwarf{
+public:
+    RedDwarf(){
+        this->name="Proxima Centaur";
+        this->age="4.85 billion years";
+        this->distant="4243 light years";
+    }
+    void ShowFacts() override{
+        cout<<"It was discovererd in 1915 by Innes, Robert Torbren, Eaton";
+    }
+    void ShowDescription() override{
+        cout<<"It's member of Alpha Centaur AB system and near star for us";
+    }
+};
+
+class BlackDwarf: public Dwarf{
+public:
+    BlackDwarf(){
+        this->name="Unknown";
+        this->age="1000000 billion years";
+        this->distant="Unknown";
+    }
+    void ShowFacts() override{
+        cout<<"You can't see it. It's theoretical model.";
+    }
+    void ShowDescription() override{
+        cout<<"It's very old stars. They are cooled and therefore not emitting (or weakly emitting) in the visible range white dwarfs.";
     }
 };
 
