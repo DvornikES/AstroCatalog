@@ -267,6 +267,170 @@ class Pleiades: public ScatteredClusters
 
 //Конец классов Вани
 
+class Galaxy : public AstroObjects
+{
+public:
+    Galaxy(string inname = "None", string inage = "None", string indistance = "None")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+};
+
+class SpiralGalaxy : public Galaxy
+{
+public:
+    SpiralGalaxy(string inname = "None", string inage = "None", string indistance = "None")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+};
+
+class ElipticGalaxy : public Galaxy
+{
+public:
+    ElipticGalaxy(string inname = "None", string inage = "None", string indistance = "None")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+};
+
+class QuasarGalaxy : public Galaxy
+{
+public:
+    QuasarGalaxy(string inname = "None", string inage = "None", string indistance = "None")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+};
+
+class WrongGalaxy : public Galaxy
+{
+public:
+    WrongGalaxy(string inname = "None", string inage = "None", string indistance = "None")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+};
+
+class MilkyWay : public SpiralGalaxy
+{
+public:
+    MilkyWay(string inname = "Milky Way", string inage = "13.2 billion years", string indistance = "about 26000 light years to the Core")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "An ordinary spiral galaxy, home for humanS" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Spiral branches are really dangerous for developing life, but we happened to stay in between too branches of Milky Way" << endl << endl;
+    }
+};
+
+class Andromeda : public SpiralGalaxy
+{
+public:
+    Andromeda(string inname = "Andromeda", string inage = "10.0 billion years", string indistance = "2.5 million light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Usual spiral galaxy, actually the biggest one in Local galaxy cluster" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Andromeda is heading toward our galaxy and it is estimated that our galaxies would collide in about 4-5 billion years" << endl << endl;
+    }
+};
+
+class M32 : public ElipticGalaxy
+{
+public:
+    M32(string inname = "M32", string inage = "2.0 billion years", string indistance = "2.9 million light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Small eliptical galaxy-companion of the Andromeda galaxy" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Was possibly created 2 billion years ago after collision of Andromeda and another galaxy"<< endl << endl;
+    }
+};
+
+class M32 : public ElipticGalaxy
+{
+public:
+    M87(string inname = "M87", string inage = "about 12-13 billion years", string indistance = "54 million light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Huge and massive eliptical galaxy with very active black hole in it's core" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Scientists used M87's core to get first picture of a black hole" << endl << endl;
+    }
+};
+
+class SMO : public WrongGalaxy
+{
+public:
+    SMO(string inname = "Small Magelanic Cloud", string inage = "about 10 billion years", string indistance = "200 thousand light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Dwarf galaxy-companion of the Milky Way withou any regular structure" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Named after Magelan, who witnessed it during his roundabout journey" << endl << endl;
+    }
+};
+
+class ULAS_J1342_0928 : public QuasarGalaxy
+{
+public:
+    ULAS_J1342_0928(string inname = "ULAS J1342+0928", string inage = "about 13.2 billion years", string indistance = "13.1 billion light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Enormous galaxy with very active core" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "One of the farest quasars known to humankind" << endl << endl;
+    }
+};
+
+class TON618 : public QuasarGalaxy
+{
+public:
+    TON618(string inname = "TON 618", string inage = "about 12 billion years", string indistance = "10.4 billion light years")
+    {
+        name(inname), age(inage), distance(indistance);
+    }
+    void ShowDescription()
+    {
+        cout << "Radioactive galaxy situated in Canis Venatici constellation" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
+    }
+};
+
 int main(){
     
     return 0;
