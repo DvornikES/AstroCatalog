@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class AstroObjects 
+class AstroObjects
 {
 protected:
 string name;
@@ -229,46 +229,37 @@ class WildGuses: public ScatteredClusters
     WildGuses()
     {
         this->name="Wild Guses";
-        this->age="none;
+        this->age="none";
         this->distant="6000 ly";
     }
-
     void ShowFacts()
     {
         cout << "It was discovered in 1681 in Berlin observatory"<<endl<<endl;
     }
-
     void ShowDescription()
     {
         cout << "Standart scattered cluster"<<endl;
     }
 };
-
 class Pleiades: public ScatteredClusters
 {
-
  public:
-
     Pleiades()
     {
         this->name="Pleiades";
         this->age="115 million years";
         this->distant="440 ly";
     }
-
     void ShowFacts()
     {
         cout << "It was discovered in ancient times..."<<endl<<endl;
     }
-
     void ShowDescription()
     {
         cout << "It was named after the characters of Greek mythology"<<endl;
     }
 };
-
 //Конец классов Вани
-
 class Galaxy : public AstroObjects
 {
 };
@@ -278,15 +269,12 @@ class SpiralGalaxy : public Galaxy
 class ElipticGalaxy : public Galaxy
 {
 };
-
 class QuasarGalaxy : public Galaxy
 {
 };
-
 class WrongGalaxy : public Galaxy
 {
 };
-
 class MilkyWay : public SpiralGalaxy
 {
 public:
@@ -305,7 +293,6 @@ public:
         cout << "Spiral branches are really dangerous for developing life, but we happened to stay in between too branches of Milky Way" << endl << endl;
     }
 };
-
 class Andromeda : public SpiralGalaxy
 {
 public:
@@ -315,7 +302,6 @@ public:
         age="10.0 billion years";
         distant="2.5 million light years";
     }
-
     void ShowDescription()
     {
         cout << "Usual spiral galaxy, actually the biggest one in Local galaxy cluster" << endl;
@@ -325,7 +311,6 @@ public:
         cout << "Andromeda is heading toward our galaxy and it is estimated that our galaxies would collide in about 4-5 billion years" << endl << endl;
     }
 };
-
 class M32 : public ElipticGalaxy
 {
 public:
@@ -344,7 +329,6 @@ public:
         cout << "Was possibly created 2 billion years ago after collision of Andromeda and another galaxy"<< endl << endl;
     }
 };
-
 class M87 : public ElipticGalaxy
 {
 public:
@@ -363,7 +347,6 @@ public:
         cout << "Scientists used M87's core to get first picture of a black hole" << endl << endl;
     }
 };
-
 class SMO : public WrongGalaxy
 {
 public:
@@ -382,7 +365,6 @@ public:
         cout << "Named after Magelan, who witnessed it during his roundabout journey" << endl << endl;
     }
 };
-
 class ULAS_J1342_0928 : public QuasarGalaxy
 {
 public:
@@ -401,7 +383,6 @@ public:
         cout << "One of the farest quasars known to humankind" << endl << endl;
     }
 };
-
 class TON618 : public QuasarGalaxy
 {
 public:
@@ -420,7 +401,6 @@ public:
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
     };
-
 class TON618 : public QuasarGalaxy
 {
 public:
@@ -439,7 +419,6 @@ public:
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
 };
-
 int main(){
     AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()}; //Создаём массив указателей со всеми объектами
     int n =18;
@@ -461,50 +440,50 @@ int main(){
                             {
                                 cout<<"Type number to choose and option"<<endl<<"Show Milky Way --> 12"<<endl<<"Show Andromeda --> 13"<<endl;
                                 cin>>selector;
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                         case 2:
                             {
                                 cout<<"Type number to choose and option"<<endl<<"Show M32 --> 14"<<endl<<"Show M87 --> 15"<<endl;
                                 cin>>selector;
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                          case 3:
                             {
                                 cout<<"Type number to choose and option"<<endl<<"Show Small Magelanic Cloud --> 16"<<endl;
                                 cin>>selector;
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                          case 4:
                             {
                                 cout<<"Type number to choose and option"<<endl<<"Show ULAS_J1342_0928 --> 17"<<endl<<"Show TON618 --> 18"<<endl;
                                 cin>>selector;
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                         default:
-                            cout<<"Incorrect input<<endl;
+                            cout<<"Incorrect input"<<endl;
                     };
-                    brake;
+                    break;
                 };
             case 2:
                 {
@@ -514,21 +493,21 @@ int main(){
                     {
                         case 1:
                             {
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                         case 2:
                             {
-                                AObj[selector-1]->ShowName;
-                                AObj[selector-1]->ShowAge;
-                                AObj[selector-1]->ShowDistant;
-                                AObj[selector-1]->ShowDescription;
-                                AObj[selector-1]->ShowFacts;
-                                brake;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
                             }
                         case 3:
                             {
@@ -538,44 +517,44 @@ int main(){
                                 {
                                     case 3:
                                         {
-                                            AObj[selector-1]->ShowName;
-                                            AObj[selector-1]->ShowAge;
-                                            AObj[selector-1]->ShowDistant;
-                                            AObj[selector-1]->ShowDescription;
-                                            AObj[selector-1]->ShowFacts;
-                                            AObj[selector-1]->ShowFacts;
-                                            brake;
+                                            AObj[selector-1]->ShowName();
+                                            AObj[selector-1]->ShowAge();
+                                            AObj[selector-1]->ShowDistant();
+                                            AObj[selector-1]->ShowDescription();
+                                            AObj[selector-1]->ShowFacts();
+                                            AObj[selector-1]->ShowFacts();
+                                            break;
                                         }
                                     case 4:
                                         {
-                                            AObj[selector-1]->ShowName;
-                                            AObj[selector-1]->ShowAge;
-                                            AObj[selector-1]->ShowDistant;
-                                            AObj[selector-1]->ShowDescription;
-                                            AObj[selector-1]->ShowFacts;
-                                            AObj[selector-1]->ShowFacts;
-                                            brake;
+                                            AObj[selector-1]->ShowName();
+                                            AObj[selector-1]->ShowAge();
+                                            AObj[selector-1]->ShowDistant();
+                                            AObj[selector-1]->ShowDescription();
+                                            AObj[selector-1]->ShowFacts();
+                                            AObj[selector-1]->ShowFacts();
+                                            break;
                                         }
                                     case 5:
                                         {
                                             cout<<"Type number to choose an option"<<endl<<"Show yellow dwarf Alpha Centaury A --> 5"<<endl<<"Show red dwarf Proxima Centaury --> 6"<<endl<<"Show hypothetical Black dwarf --> 7"<<endl;
                                             cin>>selector;
-                                            AObj[selector-1]->ShowName;
-                                            AObj[selector-1]->ShowAge;
-                                            AObj[selector-1]->ShowDistant;
-                                            AObj[selector-1]->ShowDescription;
-                                            AObj[selector-1]->ShowFacts;
-                                            AObj[selector-1]->ShowFacts;
-                                            brake;
+                                            AObj[selector-1]->ShowName();
+                                            AObj[selector-1]->ShowAge();
+                                            AObj[selector-1]->ShowDistant();
+                                            AObj[selector-1]->ShowDescription();
+                                            AObj[selector-1]->ShowFacts();
+                                            AObj[selector-1]->ShowFacts();
+                                            break;
                                         }
                                     default:
                                 };
-                                brake;
+                                break;
                             }
                         default:
                     };
-                                        
-                                            
+
+
     return 0;
 };
 
