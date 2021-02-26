@@ -532,6 +532,40 @@ int main(){
                                     default:
                                 };
                                 break;
+                                
+             case 3:
+                {
+                    cout<<"Type number to choose an option"<<endl<<"Show Spherical Clusters --> 1"<<endl<<"Show Scattered Clusters --> 2"<<endl;
+                    switch(selector)
+                    {
+                        case 1:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show Omega Centaur --> 8"<<endl<<"Show Tucan 47 --> 9"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
+                            }
+                        case 2:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show Wild Guses --> 10"<<endl<<"Show Pleiades --> 11"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName();
+                                AObj[selector-1]->ShowAge();
+                                AObj[selector-1]->ShowDistant();
+                                AObj[selector-1]->ShowDescription();
+                                AObj[selector-1]->ShowFacts();
+                                break;
+                            }
+                        default:
+                            cout<<"Incorrect input"<<endl;
+                    };
+                    break;
+                };
+                                
                             }
                         default:
                     };
