@@ -406,6 +406,8 @@ int main() {
                             new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(),
                             new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(),
                             new TON618()}; //Создаём массив указателей со всеми объектами
+    
+    bool a = false;
     int n = 18;
     int selector = 100;
     cout << "Welcome to tiny astrological catalogue ADV!" << endl;
@@ -576,7 +578,11 @@ int main() {
                 };
                 break;
             };
+            default:
+                a = true;
         };
+        if(a)
+            break;
     }
     return 0;
 }
