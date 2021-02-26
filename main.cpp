@@ -269,55 +269,30 @@ class Pleiades: public ScatteredClusters
 
 class Galaxy : public AstroObjects
 {
-public:
-    Galaxy(string inname = "None", string inage = "None", string indistance = "None")
-    {
-        name(inname), age(inage), distance(indistance);
-    }
 };
-
 class SpiralGalaxy : public Galaxy
 {
-public:
-    SpiralGalaxy(string inname = "None", string inage = "None", string indistance = "None")
-    {
-        name(inname), age(inage), distance(indistance);
-    }
 };
-
 class ElipticGalaxy : public Galaxy
 {
-public:
-    ElipticGalaxy(string inname = "None", string inage = "None", string indistance = "None")
-    {
-        name(inname), age(inage), distance(indistance);
-    }
 };
 
 class QuasarGalaxy : public Galaxy
 {
-public:
-    QuasarGalaxy(string inname = "None", string inage = "None", string indistance = "None")
-    {
-        name(inname), age(inage), distance(indistance);
-    }
 };
 
 class WrongGalaxy : public Galaxy
 {
-public:
-    WrongGalaxy(string inname = "None", string inage = "None", string indistance = "None")
-    {
-        name(inname), age(inage), distance(indistance);
-    }
 };
 
 class MilkyWay : public SpiralGalaxy
 {
 public:
-    MilkyWay(string inname = "Milky Way", string inage = "13.2 billion years", string indistance = "about 26000 light years to the Core")
+    MilkyWay()
     {
-        name(inname), age(inage), distance(indistance);
+        name="Milky Way";
+        age="13.2 billion years";
+        distant="about 26000 light years to the Core";
     }
     void ShowDescription()
     {
@@ -332,10 +307,13 @@ public:
 class Andromeda : public SpiralGalaxy
 {
 public:
-    Andromeda(string inname = "Andromeda", string inage = "10.0 billion years", string indistance = "2.5 million light years")
+    Andromeda()
     {
-        name(inname), age(inage), distance(indistance);
+        name="Andromeda";
+        age="10.0 billion years";
+        distant="2.5 million light years";
     }
+
     void ShowDescription()
     {
         cout << "Usual spiral galaxy, actually the biggest one in Local galaxy cluster" << endl;
@@ -349,9 +327,11 @@ public:
 class M32 : public ElipticGalaxy
 {
 public:
-    M32(string inname = "M32", string inage = "2.0 billion years", string indistance = "2.9 million light years")
+    M32()
     {
-        name(inname), age(inage), distance(indistance);
+        name="M32";
+        age="2.0 billion years";
+        distant="2.9 million light years";
     }
     void ShowDescription()
     {
@@ -363,12 +343,14 @@ public:
     }
 };
 
-class M32 : public ElipticGalaxy
+class M87 : public ElipticGalaxy
 {
 public:
-    M87(string inname = "M87", string inage = "about 12-13 billion years", string indistance = "54 million light years")
+    Andromeda()
     {
-        name(inname), age(inage), distance(indistance);
+        name="M87";
+        age="12-13 billion years";
+        distant="54 million light years";
     }
     void ShowDescription()
     {
@@ -383,9 +365,11 @@ public:
 class SMO : public WrongGalaxy
 {
 public:
-    SMO(string inname = "Small Magelanic Cloud", string inage = "about 10 billion years", string indistance = "200 thousand light years")
+    SMO()
     {
-        name(inname), age(inage), distance(indistance);
+        name="Small Magelanic Cloud";
+        age="10 billion years";
+        distant="200 000 light years";
     }
     void ShowDescription()
     {
@@ -400,9 +384,11 @@ public:
 class ULAS_J1342_0928 : public QuasarGalaxy
 {
 public:
-    ULAS_J1342_0928(string inname = "ULAS J1342+0928", string inage = "about 13.2 billion years", string indistance = "13.1 billion light years")
+    ULAS_J1342_0928()
     {
-        name(inname), age(inage), distance(indistance);
+        name="ULAS J1342+0928";
+        age="about 13.2 billion years";
+        distant="13.1 billion light years";
     }
     void ShowDescription()
     {
@@ -417,9 +403,11 @@ public:
 class TON618 : public QuasarGalaxy
 {
 public:
-    TON618(string inname = "TON 618", string inage = "about 12 billion years", string indistance = "10.4 billion light years")
+    TON618()
     {
-        name(inname), age(inage), distance(indistance);
+        name="TON618";
+        age="about 12 billion years";
+        distant="10.4 billion light years";
     }
     void ShowDescription()
     {
@@ -429,8 +417,7 @@ public:
     {
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
-};
-
+    };
 int main(){
     
     return 0;
