@@ -421,39 +421,35 @@ public:
     }
     };
 int main(){
-    AstroObjects* AObj[] = { new Hole(1), new Nebula(1), new Giant(1), new Neutron(1), new YellowDwarf(1), new RedDwarf(1), new BlackDwarf(1), new OmegaCentaur(1), new Tucan47(1), new WildGuses(1), new Pleiades(1), new MilkyWay(1), new Andromeda(1), new M32(1), new M87(1), new SMO(1), new ULAS_J1342_0928(1), new Ton618(1), };
-    int n = sizeof(AObj) / sizeof(AObj[0]);
+class TON618 : public QuasarGalaxy
+{
+public:
+    TON618()
+    {
+        name="TON618";
+        age="about 12 billion years";
+        distant="10.4 billion light years";
+    }
+    void ShowDescription()
+    {
+        cout << "Radioactive galaxy situated in Canis Venatici constellation" << endl;
+    }
+    void ShowFacts()
+    {
+        cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
+    }
+};
+int main(){
+    AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()};
+    int n =18;
     for (int i = 0; i < n; i++)
     {
-        AObj->ShowName();
-        AObj->ShowAge();
-        AObj->ShoDistance();
-        AObj->ShowDescription();
-        AObj->ShowFacts();
+        AObj[i]->ShowName();
+        AObj[i]->ShowAge();
+        AObj[i]->ShowDistant();
+        AObj[i]->ShowDescription();
+        AObj[i]->ShowFacts();
     };
-    AstroObjects * mass[8];
-    AstroObjects * OmegaCentaur_ = new OmegaCentaur();
-    AstroObjects * Tucan47_ = new Tucan47();
-    AstroObjects * WildGuses_ = new WildGuses();
-    AstroObjects * Pleiades_ = new Pleiades();
-    AstroObjects * Hole_ = new Hole();
-
-    mass[0] = OmegaCentaur_;
-    mass[1] = Tucan47_;
-    mass[2] = WildGuses_;
-    mass[3] = Pleiades_;
-    mass[4] = Hole_;
-    for(int i = 0; i < 5; ++i)
-    {
-        mass[i]->ShowName();
-        //mass[i]->ShowType();
-        mass[i]->ShowAge();
-        //mass[i]->ShowAmount();
-        mass[i]->ShowDistant();
-        mass[i]->ShowDescription();
-        mass[i]->ShowFacts();
-        cout << endl;
-    }
     return 0;
 };
 
