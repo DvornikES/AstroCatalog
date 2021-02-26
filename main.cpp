@@ -10,15 +10,15 @@ string distant;
 public:
 void ShowName()
 {
-cout<<name;
+cout<<name<<endl;
 };
 void ShowAge()
 {
-cout<<age;
+cout<<age<<endl;
 }
 void ShowDistant()
 {
-cout<<distant;
+cout<<distant<<endl;
 }
 virtual void ShowFacts() = 0;
 virtual void ShowDescription() = 0;
@@ -38,10 +38,10 @@ public:
         this->distant="53 mln light years";
     }
     void ShowFacts() override{
-        cout<<"Scientists made first picture of blackhole in whole histroy exactly of this one";
+        cout<<"Scientists made first picture of blackhole in whole histroy exactly of this one"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"Supermassive black hole from M87's core";
+        cout<<"Supermassive black hole from M87's core"<<endl;
     }
 };
 class Nebula : public Starlike{
@@ -52,10 +52,10 @@ public:
         this->distant="~2000-6000 light years";
     }
     void ShowFacts() override{
-        cout<<"Has one of the hottest stars in it's center";
+        cout<<"Has one of the hottest stars in it's center"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"Usual planetar nebula popular across astronomy amauters";
+        cout<<"Usual planetar nebula popular across astronomy amauters"<<endl;
     }
 };
 class Star : public Starlike{
@@ -68,10 +68,10 @@ public:
         this->distant="~500-600 light years";
     }
     void ShowFacts() override{
-        cout<<"All the time changes it's radius and brightness, the second star we have picture of (after Sun)";
+        cout<<"All the time changes it's radius and brightness, the second star we have picture of (after Sun)"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"Very bright red supergiant, can be seen near Orion constellation";
+        cout<<"Very bright red supergiant, can be seen near Orion constellation"<<endl;
     }
 };
 class Neutron: public Star{
@@ -82,10 +82,10 @@ public:
         this->distant="~6523 light years";
     }
     void ShowFacts() override{
-        cout<<"The closest known isolated neutron star (i.e. without any star companions)";
+        cout<<"The closest known isolated neutron star (i.e. without any star companions)"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"Usual neutron star with spinning period of 59 milliseconds";
+        cout<<"Usual neutron star with spinning period of 59 milliseconds"<<endl;
     }
 };
 class Dwarf: public Star{
@@ -98,10 +98,10 @@ public:
         this->distant=" 4.36 light years";
     }
     void ShowFacts() override{
-        cout<<"One of the components of Alpha Centaury triple system, can be seen in nightsky as one star with Alpha Centaury B";
+        cout<<"One of the components of Alpha Centaury triple system, can be seen in nightsky as one star with Alpha Centaury B"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"Sunlike yellow dwarf in local star cluster";
+        cout<<"Sunlike yellow dwarf in local star cluster"<<endl;
     }
 };
 
@@ -113,10 +113,10 @@ public:
         this->distant="4.2 light years";
     }
     void ShowFacts() override{
-        cout<<"It was discovererd in 1915 by Innes, Robert Torbren, Eaton, the closest star to the Sun";
+        cout<<"It was discovererd in 1915 by Innes, Robert Torbren, Eaton, the closest star to the Sun"<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"It's member of Alpha Centaur AB system and can't be seen in nightsky without any astronomical devices";
+        cout<<"It's member of Alpha Centaur AB system and can't be seen in nightsky without any astronomical devices"<<endl;
     }
 };
 
@@ -128,10 +128,10 @@ public:
         this->distant="Unknown";
     }
     void ShowFacts() override{
-        cout<<"You can't see it. It's theoretical model.";
+        cout<<"You can't see it. It's theoretical model."<<endl<<endl;
     }
     void ShowDescription() override{
-        cout<<"It's very old stars. They are cooled and therefore not emitting (or weakly emitting) in the visible range white dwarfs.";
+        cout<<"It's very old stars. They are cooled and therefore not emitting (or weakly emitting) in the visible range white dwarfs."<<endl;
     }
 };
 
@@ -180,19 +180,19 @@ class OmegaCentaur: public SphericalClusters
 
     OmegaCentaur()
     {
-        this->name="Omega Centaur\n";
-        this->age="none\n";
-        this->distant="15 - 17 ly\n";
+        this->name="Omega Centaur";
+        this->age="none";
+        this->distant="15 - 17 ly";
     }
 
     void ShowFacts()
     {
-        cout << "It was discovered in ancient times...\n";
+        cout << "It was discovered in ancient times..."<<endl<<endl;
     }
 
     void ShowDescription()
     {
-        cout << "Standart spherical cluster\n";
+        cout << "Standart spherical cluster"<<endl;
     }
 };
 
@@ -204,19 +204,19 @@ class Tucan47: public SphericalClusters
 
     Tucan47()
     {
-        this->name="47 Tucan\n";
-        this->age="none\n";
-        this->distant="14514 ly\n";
+        this->name="47 Tucan";
+        this->age="none";
+        this->distant="14514 ly";
     }
 
     void ShowFacts()
     {
-        cout << "It was discovered in 14th September in 1751 by Nicola Lui de Lakail\n";
+        cout << "It was discovered in 14th September in 1751 by Nicola Lui de Lakail"<<endl<<endl;
     }
 
     void ShowDescription()
     {
-        cout << "Standart spherical cluster\n";
+        cout << "Standart spherical cluster"<<endl;
     }
 };
 
@@ -228,19 +228,19 @@ class WildGuses: public ScatteredClusters
 
     WildGuses()
     {
-        this->name="Wild Guses\n";
-        this->age="none\n";
-        this->distant="6000 ly\n";
+        this->name="Wild Guses";
+        this->age="none;
+        this->distant="6000 ly";
     }
 
     void ShowFacts()
     {
-        cout << "It was discovered in 1681 in Berlin observatory\n";
+        cout << "It was discovered in 1681 in Berlin observatory"<<endl<<endl;
     }
 
     void ShowDescription()
     {
-        cout << "Standart scattered cluster\n";
+        cout << "Standart scattered cluster"<<endl;
     }
 };
 
@@ -251,19 +251,19 @@ class Pleiades: public ScatteredClusters
 
     Pleiades()
     {
-        this->name="Pleiades\n";
-        this->age="115 million years\n";
-        this->distant="440 ly\n";
+        this->name="Pleiades";
+        this->age="115 million years";
+        this->distant="440 ly";
     }
 
     void ShowFacts()
     {
-        cout << "It was discovered in ancient times...\n";
+        cout << "It was discovered in ancient times..."<<endl<<endl;
     }
 
     void ShowDescription()
     {
-        cout << "It was named after the characters of Greek mythology\n";
+        cout << "It was named after the characters of Greek mythology"<<endl;
     }
 };
 
@@ -420,7 +420,7 @@ public:
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
     };
-int main(){
+
 class TON618 : public QuasarGalaxy
 {
 public:
@@ -439,17 +439,143 @@ public:
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
 };
+
 int main(){
-    AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()};
+    AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()}; //Создаём массив указателей со всеми объектами
     int n =18;
-    for (int i = 0; i < n; i++)
+    int selector = 100;
+    cout<<"Welcome to tiny astrological catalogue ADV!"<<endl;
+    while(int i =! 0)
     {
-        AObj[i]->ShowName();
-        AObj[i]->ShowAge();
-        AObj[i]->ShowDistant();
-        AObj[i]->ShowDescription();
-        AObj[i]->ShowFacts();
-    };
+        cout<<"Type number to choose an option"<<endl<<"Show Galaxies --> 1"<<endl<<"Show star-sized objects --> 2"<<endl<<"Show Star Clusters --> 3"<<endl<<"Show random object --> 4"<<endl<<"Exit program --> Any other number"<<endl;
+        cin>>selector;
+        switch(selector)
+        {
+            case 1:
+                {
+                    cout<<"Type number to choose an option"<<endl<<"Show Spiral galaxies --> 1"<<endl<<"Show Eliptic galaxies --> 2"<<endl<<"Show Wrong Shape galaxies --> 3"<<endl<<"Show Quasars --> 4"<<endl;
+                    cin>>selector;
+                    switch(selector)
+                    {
+                        case 1:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show Milky Way --> 12"<<endl<<"Show Andromeda --> 13"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                        case 2:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show M32 --> 14"<<endl<<"Show M87 --> 15"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                         case 3:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show Small Magelanic Cloud --> 16"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                         case 4:
+                            {
+                                cout<<"Type number to choose and option"<<endl<<"Show ULAS_J1342_0928 --> 17"<<endl<<"Show TON618 --> 18"<<endl;
+                                cin>>selector;
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                        default:
+                            cout<<"Incorrect input<<endl;
+                    };
+                    brake;
+                };
+            case 2:
+                {
+                    cout<<"Type number to choose an option"<<endl<<"Show Black Hole M87 --> 1"<<endl<<"Show Blue Snowball Nebula --> 2"<<endl<<"Show stars --> 3"<<endl;
+                    cin>>selector;
+                    switch(selector)
+                    {
+                        case 1:
+                            {
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                        case 2:
+                            {
+                                AObj[selector-1]->ShowName;
+                                AObj[selector-1]->ShowAge;
+                                AObj[selector-1]->ShowDistant;
+                                AObj[selector-1]->ShowDescription;
+                                AObj[selector-1]->ShowFacts;
+                                brake;
+                            }
+                        case 3:
+                            {
+                                cout<<"Type number to choose an option"<<endl<<"Show Betelgause Supergiant --> 3"<<endl<<"Show Calvera neutron star --> 4"<<endl<<"Show dwarf stars --> 5"<<endl;
+                                cin>>selector;
+                                switch(selector)
+                                {
+                                    case 3:
+                                        {
+                                            AObj[selector-1]->ShowName;
+                                            AObj[selector-1]->ShowAge;
+                                            AObj[selector-1]->ShowDistant;
+                                            AObj[selector-1]->ShowDescription;
+                                            AObj[selector-1]->ShowFacts;
+                                            AObj[selector-1]->ShowFacts;
+                                            brake;
+                                        }
+                                    case 4:
+                                        {
+                                            AObj[selector-1]->ShowName;
+                                            AObj[selector-1]->ShowAge;
+                                            AObj[selector-1]->ShowDistant;
+                                            AObj[selector-1]->ShowDescription;
+                                            AObj[selector-1]->ShowFacts;
+                                            AObj[selector-1]->ShowFacts;
+                                            brake;
+                                        }
+                                    case 5:
+                                        {
+                                            cout<<"Type number to choose an option"<<endl<<"Show yellow dwarf Alpha Centaury A --> 5"<<endl<<"Show red dwarf Proxima Centaury --> 6"<<endl<<"Show hypothetical Black dwarf --> 7"<<endl;
+                                            cin>>selector;
+                                            AObj[selector-1]->ShowName;
+                                            AObj[selector-1]->ShowAge;
+                                            AObj[selector-1]->ShowDistant;
+                                            AObj[selector-1]->ShowDescription;
+                                            AObj[selector-1]->ShowFacts;
+                                            AObj[selector-1]->ShowFacts;
+                                            brake;
+                                        }
+                                    default:
+                                };
+                                brake;
+                            }
+                        default:
+                    };
+                                        
+                                            
     return 0;
 };
 
