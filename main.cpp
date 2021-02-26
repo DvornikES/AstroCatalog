@@ -543,6 +543,7 @@ int main() {
             case 3: {
                 cout << "Type number to choose an option" << endl << "Show Spherical Clusters --> 1" << endl
                      << "Show Scattered Clusters --> 2" << endl;
+                cin >> selector;
                 switch (selector) {
 
                     case 1: {
