@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <ctime>
 using namespace std;
 class AstroObjects
 {
@@ -578,6 +579,16 @@ int main() {
                 };
                 break;
             };
+            case 4:
+                {
+                    selector = srand( time( 0 )) % 18;
+                    AObj[selector]->ShowName();
+                    AObj[selector]->ShowAge();
+                    AObj[selector]->ShowDistant();
+                    AObj[selector]->ShowDescription();
+                    AObj[selector]->ShowFacts();
+                    break;
+                }
             default:
                 a = true;
         };
