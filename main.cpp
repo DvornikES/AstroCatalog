@@ -22,6 +22,8 @@ cout<<distant;
 }
 virtual void ShowFacts() = 0;
 virtual void ShowDescription() = 0;
+virtual void ShowType() = 0;
+virtual void ShowAmount() = 0;
 };
 
 // Начало Алёниных классов
@@ -346,7 +348,7 @@ public:
 class M87 : public ElipticGalaxy
 {
 public:
-    Andromeda()
+    M87()
     {
         name="M87";
         age="12-13 billion years";
@@ -419,6 +421,29 @@ public:
     }
     };
 int main(){
-    
+    AstroObjects * mass[8];
+    AstroObjects * OmegaCentaur_ = new OmegaCentaur();
+    AstroObjects * Tucan47_ = new Tucan47();
+    AstroObjects * WildGuses_ = new WildGuses();
+    AstroObjects * Pleiades_ = new Pleiades();
+    AstroObjects * Hole_ = new Hole();
+
+    mass[0] = OmegaCentaur_;
+    mass[1] = Tucan47_;
+    mass[2] = WildGuses_;
+    mass[3] = Pleiades_;
+    mass[4] = Hole_;
+    for(int i = 0; i < 5; ++i)
+    {
+        mass[i]->ShowName();
+        mass[i]->ShowType();
+        mass[i]->ShowAge();
+        mass[i]->ShowAmount();
+        mass[i]->ShowDistant();
+        mass[i]->ShowDescription();
+        mass[i]->ShowFacts();
+        cout << endl;
+    }
     return 0;
 };
+
