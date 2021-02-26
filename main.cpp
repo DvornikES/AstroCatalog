@@ -22,8 +22,8 @@ cout<<distant;
 }
 virtual void ShowFacts() = 0;
 virtual void ShowDescription() = 0;
-virtual void ShowType() = 0;
-virtual void ShowAmount() = 0;
+//virtual void ShowType() = 0;
+//virtual void ShowAmount() = 0;
 };
 
 // Начало Алёниных классов
@@ -436,9 +436,9 @@ int main(){
     for(int i = 0; i < 5; ++i)
     {
         mass[i]->ShowName();
-        mass[i]->ShowType();
+        //mass[i]->ShowType();
         mass[i]->ShowAge();
-        mass[i]->ShowAmount();
+        //mass[i]->ShowAmount();
         mass[i]->ShowDistant();
         mass[i]->ShowDescription();
         mass[i]->ShowFacts();
