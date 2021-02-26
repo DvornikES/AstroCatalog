@@ -421,6 +421,16 @@ public:
     }
     };
 int main(){
+    AstroObjects* AObj[] = { new Hole(1), new Nebula(1), new Giant(1), new Neutron(1), new YellowDwarf(1), new RedDwarf(1), new BlackDwarf(1), new OmegaCentaur(1), new Tucan47(1), new WildGuses(1), new Pleiades(1), new MilkyWay(1), new Andromeda(1), new M32(1), new M87(1), new SMO(1), new ULAS_J1342_0928(1), new Ton618(1), };
+    int n = sizeof(AObj) / sizeof(AObj[0]);
+    for (int i = 0; i < n; i++)
+    {
+        AObj->ShowName();
+        AObj->ShowAge();
+        AObj->ShoDistance();
+        AObj->ShowDescription();
+        AObj->ShowFacts();
+    };
     AstroObjects * mass[8];
     AstroObjects * OmegaCentaur_ = new OmegaCentaur();
     AstroObjects * Tucan47_ = new Tucan47();
