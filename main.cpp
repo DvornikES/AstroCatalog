@@ -38,10 +38,10 @@ public:
         this->distant="53 mln light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about Hole";
+        cout<<"Scientists made first picture of blackhole in whole histroy exactly of this one";
     }
     void ShowDescription() override{
-        cout<<"Yea description of Hole";
+        cout<<"Supermassive black hole from M87's core";
     }
 };
 class Nebula : public Starlike{
@@ -52,10 +52,10 @@ public:
         this->distant="~2000-6000 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about snowball";
+        cout<<"Has one of the hottest stars in it's center";
     }
     void ShowDescription() override{
-        cout<<"Yea description of snowball";
+        cout<<"Usual planetar nebula popular across astronomy amauters";
     }
 };
 class Star : public Starlike{
@@ -68,10 +68,10 @@ public:
         this->distant="~500-600 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about giant";
+        cout<<"All the time changes it's radius and brightness, the second star we have picture of (after Sun)";
     }
     void ShowDescription() override{
-        cout<<"Yea description of giant";
+        cout<<"Very bright red supergiant, can be seen near Orion constellation";
     }
 };
 class Neutron: public Star{
@@ -82,10 +82,10 @@ public:
         this->distant="~6523 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about Neutron";
+        cout<<"The closest known isolated neutron star (i.e. without any star companions)";
     }
     void ShowDescription() override{
-        cout<<"Yea description of Neutron";
+        cout<<"Usual neutron star with spinning period of 59 milliseconds";
     }
 };
 class Dwarf: public Star{
@@ -93,30 +93,30 @@ class Dwarf: public Star{
 class YellowDwarf: public Dwarf{
 public:
     YellowDwarf(){
-        this->name="Alpha Centaur";
-        this->age="285 thouthands years";
-        this->distant="~6523 light years";
+        this->name="Alpha Centaury A";
+        this->age="6 billion years";
+        this->distant=" 4.36 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about Neutron";
+        cout<<"One of the components of Alpha Centaury triple system, can be seen in nightsky as one star with Alpha Centaury B";
     }
     void ShowDescription() override{
-        cout<<"Yea description of Neutron";
+        cout<<"Sunlike yellow dwarf in local star cluster";
     }
 };
 
 class RedDwarf: public Dwarf{
 public:
     RedDwarf(){
-        this->name="Proxima Centaur";
-        this->age="4.85 billion years";
-        this->distant="4243 light years";
+        this->name="Proxima Centaury";
+        this->age="6 billion years";
+        this->distant="4.2 light years";
     }
     void ShowFacts() override{
-        cout<<"It was discovererd in 1915 by Innes, Robert Torbren, Eaton";
+        cout<<"It was discovererd in 1915 by Innes, Robert Torbren, Eaton, the closest star to the Sun";
     }
     void ShowDescription() override{
-        cout<<"It's member of Alpha Centaur AB system and near star for us";
+        cout<<"It's member of Alpha Centaur AB system and can't be seen in nightsky without any astronomical devices";
     }
 };
 
