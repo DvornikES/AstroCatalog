@@ -401,176 +401,182 @@ public:
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
 };
-int main(){
-    AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()}; //Создаём массив указателей со всеми объектами
-    int n =18;
+int main() {
+    AstroObjects *AObj[] = {new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(),
+                            new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(),
+                            new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(),
+                            new TON618()}; //Создаём массив указателей со всеми объектами
+    int n = 18;
     int selector = 100;
-    cout<<"Welcome to tiny astrological catalogue ADV!"<<endl;
-    while(int i =! 0)
-    {
-        cout<<"Type number to choose an option"<<endl<<"Show Galaxies --> 1"<<endl<<"Show star-sized objects --> 2"<<endl<<"Show Star Clusters --> 3"<<endl<<"Show random object --> 4"<<endl<<"Exit program --> Any other number"<<endl;
-        cin>>selector;
-        switch(selector)
-        {
-            case 1:
-                {
-                    cout<<"Type number to choose an option"<<endl<<"Show Spiral galaxies --> 1"<<endl<<"Show Eliptic galaxies --> 2"<<endl<<"Show Wrong Shape galaxies --> 3"<<endl<<"Show Quasars --> 4"<<endl;
-                    cin>>selector;
-                    switch(selector)
-                    {
-                        case 1:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show Milky Way --> 12"<<endl<<"Show Andromeda --> 13"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        case 2:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show M32 --> 14"<<endl<<"Show M87 --> 15"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                         case 3:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show Small Magelanic Cloud --> 16"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                         case 4:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show ULAS_J1342_0928 --> 17"<<endl<<"Show TON618 --> 18"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        default:
-                            cout<<"Incorrect input"<<endl;
-                    };
-                    break;
+    cout << "Welcome to tiny astrological catalogue ADV!" << endl;
+    while (int i = !0) {
+        cout << "Type number to choose an option" << endl << "Show Galaxies --> 1" << endl
+             << "Show star-sized objects --> 2" << endl << "Show Star Clusters --> 3" << endl
+             << "Show random object --> 4" << endl << "Exit program --> Any other number" << endl;
+        cin >> selector;
+        switch (selector) {
+            case 1: {
+                cout << "Type number to choose an option" << endl << "Show Spiral galaxies --> 1" << endl
+                     << "Show Eliptic galaxies --> 2" << endl << "Show Wrong Shape galaxies --> 3" << endl
+                     << "Show Quasars --> 4" << endl;
+                cin >> selector;
+                switch (selector) {
+                    case 1: {
+                        cout << "Type number to choose and option" << endl << "Show Milky Way --> 12" << endl
+                             << "Show Andromeda --> 13" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 2: {
+                        cout << "Type number to choose and option" << endl << "Show M32 --> 14" << endl
+                             << "Show M87 --> 15" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 3: {
+                        cout << "Type number to choose and option" << endl << "Show Small Magelanic Cloud --> 16"
+                             << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 4: {
+                        cout << "Type number to choose and option" << endl << "Show ULAS_J1342_0928 --> 17" << endl
+                             << "Show TON618 --> 18" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    default:
+                        cout << "Incorrect input" << endl;
                 };
-            case 2:
-                {
-                    cout<<"Type number to choose an option"<<endl<<"Show Black Hole M87 --> 1"<<endl<<"Show Blue Snowball Nebula --> 2"<<endl<<"Show stars --> 3"<<endl;
-                    cin>>selector;
-                    switch(selector)
-                    {
-                        case 1:
-                            {
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        case 2:
-                            {
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        case 3:
-                            {
-                                cout<<"Type number to choose an option"<<endl<<"Show Betelgause Supergiant --> 3"<<endl<<"Show Calvera neutron star --> 4"<<endl<<"Show dwarf stars --> 5"<<endl;
-                                cin>>selector;
-                                switch(selector)
-                                {
-                                    case 3:
-                                        {
-                                            AObj[selector-1]->ShowName();
-                                            AObj[selector-1]->ShowAge();
-                                            AObj[selector-1]->ShowDistant();
-                                            AObj[selector-1]->ShowDescription();
-                                            AObj[selector-1]->ShowFacts();
-                                            AObj[selector-1]->ShowFacts();
-                                            break;
-                                        }
-                                    case 4:
-                                        {
-                                            AObj[selector-1]->ShowName();
-                                            AObj[selector-1]->ShowAge();
-                                            AObj[selector-1]->ShowDistant();
-                                            AObj[selector-1]->ShowDescription();
-                                            AObj[selector-1]->ShowFacts();
-                                            AObj[selector-1]->ShowFacts();
-                                            break;
-                                        }
-                                    case 5:
-                                        {
-                                            cout<<"Type number to choose an option"<<endl<<"Show yellow dwarf Alpha Centaury A --> 5"<<endl<<"Show red dwarf Proxima Centaury --> 6"<<endl<<"Show hypothetical Black dwarf --> 7"<<endl;
-                                            cin>>selector;
-                                            AObj[selector-1]->ShowName();
-                                            AObj[selector-1]->ShowAge();
-                                            AObj[selector-1]->ShowDistant();
-                                            AObj[selector-1]->ShowDescription();
-                                            AObj[selector-1]->ShowFacts();
-                                            AObj[selector-1]->ShowFacts();
-                                            break;
-                                        }
-                                    default:
-                                };
-                                break;
-                                
-             case 3:
-                {
-                    cout<<"Type number to choose an option"<<endl<<"Show Spherical Clusters --> 1"<<endl<<"Show Scattered Clusters --> 2"<<endl;
-                    switch(selector)
-                    {
-                        case 1:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show Omega Centaur --> 8"<<endl<<"Show Tucan 47 --> 9"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        case 2:
-                            {
-                                cout<<"Type number to choose and option"<<endl<<"Show Wild Guses --> 10"<<endl<<"Show Pleiades --> 11"<<endl;
-                                cin>>selector;
-                                AObj[selector-1]->ShowName();
-                                AObj[selector-1]->ShowAge();
-                                AObj[selector-1]->ShowDistant();
-                                AObj[selector-1]->ShowDescription();
-                                AObj[selector-1]->ShowFacts();
-                                break;
-                            }
-                        default:
-                            cout<<"Incorrect input"<<endl;
-                    };
-                    break;
-                };
-                                
-                            }
-                        default:
-                    };
+                break;
+            };
 
 
+            case 2: {
+                cout << "Type number to choose an option" << endl << "Show Black Hole M87 --> 1" << endl
+                     << "Show Blue Snowball Nebula --> 2" << endl << "Show stars --> 3" << endl;
+                cin >> selector;
+                switch (selector) {
+
+                    case 1: {
+
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 2: {
+
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 3: {
+                        cout << "Type number to choose an option" << endl << "Show Betelgause Supergiant --> 3" << endl
+                             << "Show Calvera neutron star --> 4" << endl << "Show dwarf stars --> 5" << endl;
+                        cin >> selector;
+                        switch (selector)
+                            case 3:
+                                AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 4: {
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 5: {
+                        cout << "Type number to choose an option" << endl
+                             << "Show yellow dwarf Alpha Centaury A --> 5" << endl
+                             << "Show red dwarf Proxima Centaury --> 6" << endl
+                             << "Show hypothetical Black dwarf --> 7" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    default:
+                        cout << "Incorrect input" << endl;
+                };
+                break;
+            };
+
+
+            case 3: {
+                cout << "Type number to choose an option" << endl << "Show Spherical Clusters --> 1" << endl
+                     << "Show Scattered Clusters --> 2" << endl;
+                switch (selector) {
+
+                    case 1: {
+
+                        cout << "Type number to choose and option" << endl << "Show Omega Centaur --> 8"
+                             << endl << "Show Tucan 47 --> 9" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    case 2: {
+
+                        cout << "Type number to choose and option" << endl << "Show Wild Guses --> 10"
+                             << endl
+                             << "Show Pleiades --> 11" << endl;
+                        cin >> selector;
+                        AObj[selector - 1]->ShowName();
+                        AObj[selector - 1]->ShowAge();
+                        AObj[selector - 1]->ShowDistant();
+                        AObj[selector - 1]->ShowDescription();
+                        AObj[selector - 1]->ShowFacts();
+                        break;
+                    }
+                    default:
+                        cout << "Incorrect input" << endl;
+                };
+                break;
+            };
+        };
+    }
     return 0;
-};
+}
 
