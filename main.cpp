@@ -400,24 +400,6 @@ public:
     {
         cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
     }
-    };
-class TON618 : public QuasarGalaxy
-{
-public:
-    TON618()
-    {
-        name="TON618";
-        age="about 12 billion years";
-        distant="10.4 billion light years";
-    }
-    void ShowDescription()
-    {
-        cout << "Radioactive galaxy situated in Canis Venatici constellation" << endl;
-    }
-    void ShowFacts()
-    {
-        cout << "Gas in accretion disk is spinning at about 7000 km/s" << endl << endl;
-    }
 };
 int main(){
     AstroObjects* AObj[] = { new Hole(), new Nebula(), new Giant(), new Neutron(), new YellowDwarf(), new RedDwarf(), new BlackDwarf(), new OmegaCentaur(), new Tucan47(), new WildGuses(), new Pleiades(), new MilkyWay(), new Andromeda(), new M32(), new M87(), new SMO(), new ULAS_J1342_0928(), new TON618()}; //Создаём массив указателей со всеми объектами
